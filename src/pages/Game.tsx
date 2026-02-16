@@ -1,8 +1,8 @@
 import { Navigation } from "../components"
-import { Stack, Text, Title, Container, Group, Image, Button, Timeline } from "@mantine/core"
+import { Stack, Text, Title, Container, Group, Image, Button } from "@mantine/core"
 import { useEffect, useState } from "react"
 import { useInterval } from "@mantine/hooks"
-import { IconX, IconArrowRight } from "@tabler/icons-react"
+import { IconArrowRight } from "@tabler/icons-react"
 import { getGameQuestions } from "../lib/questionBank"
 
 import classes from './styles.module.css'
@@ -10,7 +10,7 @@ import classes from './styles.module.css'
 const Game = ({ setModal, setGameState, setScore }: PageType) => {
 
   const [second, setSecond] = useState<number>(3)
-  const timer = useInterval(() => setSecond((s) => s - 1), 300, { autoInvoke: true })
+  const timer = useInterval(() => setSecond((s) => s - 1), 1000, { autoInvoke: true })
 
   const [gameStarted, setGameStarted] = useState<boolean>(false)
 
@@ -24,7 +24,7 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
 
   const [totalScore, setTotalScore] = useState<number>(0)
 
-  const gameTimer = useInterval(() => setTimeLeft((t) => t - 1), 300, { autoInvoke: false })
+  const gameTimer = useInterval(() => setTimeLeft((t) => t - 1), 1000, { autoInvoke: false })
 
   useEffect(() => {
     if (second === 0 && !gameStarted) {
@@ -40,7 +40,7 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
   useEffect(() => {
     if (timeLeft === 0) {
       gameTimer.stop()
-      setTotalScore((score) => (userAnswer !== currentQ.correctIsFirst) ? score + 1 : score)
+      setTotalScore((score) => (userAnswer === currentQ.correctIsFirst) ? score + 1 : score)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft])
@@ -145,7 +145,7 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
               </div>
             </Group>
             <Text className={classes.score}>
-              Score: {totalScore} / {currentQuestion + 1}
+              Score: {totalScore} / 10
             </Text>
             {/* Bottom Actions */}
             <Button style={{

@@ -14,18 +14,18 @@ const Leaderboard = () => {
     ]
   })
 
-  const demoData = [
-    JSON.stringify({ name: 'Alice', score: 10 }),
-    JSON.stringify({ name: 'Bob', score: 8 }),
-    JSON.stringify({ name: 'Charlie', score: 6 }),
-    JSON.stringify({ name: 'Digger', score: 6 }),
-    JSON.stringify({ name: 'Bigger', score: 6 }),
-    JSON.stringify({ name: 'Bigger', score: 6 }),
-    JSON.stringify({ name: 'Bigger', score: 6 }),
-    JSON.stringify({ name: 'Bigger', score: 6 }),
-    JSON.stringify({ name: 'Bigger', score: 6 }),
-    JSON.stringify({ name: 'Bigger', score: 6 }),
-  ]
+  // const demoData = [
+  //   JSON.stringify({ name: 'Alice', score: 10 }),
+  //   JSON.stringify({ name: 'Bob', score: 8 }),
+  //   JSON.stringify({ name: 'Charlie', score: 6 }),
+  //   JSON.stringify({ name: 'Digger', score: 6 }),
+  //   JSON.stringify({ name: 'Bigger', score: 6 }),
+  //   JSON.stringify({ name: 'Bigger', score: 6 }),
+  //   JSON.stringify({ name: 'Bigger', score: 6 }),
+  //   JSON.stringify({ name: 'Bigger', score: 6 }),
+  //   JSON.stringify({ name: 'Bigger', score: 6 }),
+  //   JSON.stringify({ name: 'Bigger', score: 6 }),
+  // ]
 
   return (
     <Container className={classes.leaderboard}>
