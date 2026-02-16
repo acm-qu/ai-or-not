@@ -11,9 +11,11 @@ function App() {
   const CurrentModal = useMemo(() => modal ? Modals[modal] : () => <></>, [modal])
   const CurrentPage = useMemo(() => Pages[gameState], [gameState])
 
+  const handleCloseModal = () => setModal('')
+
   return (
     <>
-      <Modal opened={modal !== ''} onClose={() => setModal('')}>
+      <Modal withOverlay={true} closeOnClickOutside={true} opened={modal !== ''} onClose={handleCloseModal} withCloseButton={false}>
         <CurrentModal />
       </Modal>
       <CurrentPage

@@ -4,12 +4,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #0C152A;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lexend', serif;
 }
 
-body {
+html, body {
   background-color: #0C142B;
+  overflow: hidden;
+}
+
+/* Remove scrollbars (Webkit browsers) */
+::-webkit-scrollbar {
+  display: none;
 }

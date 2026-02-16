@@ -1,15 +1,19 @@
 .navigation {
-  background-color: red;
   align-items: center;
+  justify-content: space-around;
   flex-direction: row;
   > .button {
     all: unset;
+    border-radius: 99px;
+    cursor: pointer;
     height: 48px;
-    width: 160px;
+    width: 172px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0C142B;
+    span {
+      color: #0C152A !important;
+    }
     background: linear-gradient(
       to right,
       white 0%,
@@ -20,7 +24,9 @@
     transition: .6s cubic-bezier(0,1.06,.63,1.01);
     &:hover {
       background-position: -100%;
-      color: white;
+      span {
+        color: white !important;
+      }
     }
   }
 }
