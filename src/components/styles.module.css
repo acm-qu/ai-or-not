@@ -1,0 +1,26 @@
+.navigation {
+  background-color: red;
+  align-items: center;
+  flex-direction: row;
+  > .button {
+    all: unset;
+    height: 48px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0C142B;
+    background: linear-gradient(
+      to right,
+      white 0%,
+      white 50%,
+      #FAD14A 50%,
+      #FAD14A 100%);
+    background-size: 200%;
+    transition: .6s cubic-bezier(0,1.06,.63,1.01);
+    &:hover {
+      background-position: -100%;
+      color: white;
+    }
+  }
+}
