@@ -12,8 +12,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
-  background-color: #0C142B;
   overflow: hidden;
+}
+body {
+  min-height: 100dvh;
+  background: linear-gradient(to top, #0C152A 50%, #0C152A80), url('/bg.png');
 }
 
 /* Remove scrollbars (Webkit browsers) */

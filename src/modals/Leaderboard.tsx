@@ -5,7 +5,7 @@ import classes from './styles.module.css'
 
 const Leaderboard = () => {
 
-  const [leaderboard, setLeaderboard] = useLocalStorage({
+  const [leaderboard] = useLocalStorage({
     key: 'leaderboard',
     defaultValue: [
       JSON.stringify({ name: 'Alice', score: 10 }),
@@ -35,7 +35,7 @@ const Leaderboard = () => {
       <Stack gap={28} h={500} className={classes.participants}>
         <Box className={classes.glow} />
         {
-          demoData.sort((a, b) => JSON.parse(b).score - JSON.parse(a).score).map((entry, index) => {
+          leaderboard.sort((a, b) => JSON.parse(b).score - JSON.parse(a).score).map((entry, index) => {
             const { name, score } = JSON.parse(entry)
             const ranking = index + 1
             return (

@@ -7,6 +7,7 @@ function App() {
 
   const [modal, setModal] = useState<keyof typeof Modals | ''>('')
   const [gameState, setGameState] = useState<keyof typeof Pages>('idle')
+  const [score, setScore] = useState<number>(0)
 
   const CurrentModal = useMemo(() => modal ? Modals[modal] : () => <></>, [modal])
   const CurrentPage = useMemo(() => Pages[gameState], [gameState])
@@ -21,6 +22,8 @@ function App() {
       <CurrentPage
         setGameState={setGameState}
         setModal={setModal}
+        score={score}
+        setScore={setScore}
       />
     </>
   )
