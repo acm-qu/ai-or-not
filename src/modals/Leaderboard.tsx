@@ -7,11 +7,7 @@ const Leaderboard = () => {
 
   const [leaderboard] = useLocalStorage({
     key: 'leaderboard',
-    defaultValue: [
-      JSON.stringify({ name: 'Alice', score: 10 }),
-      JSON.stringify({ name: 'Bob', score: 8 }),
-      JSON.stringify({ name: 'Charlie', score: 6 }),
-    ]
+    defaultValue: []
   })
 
   // const demoData = [
