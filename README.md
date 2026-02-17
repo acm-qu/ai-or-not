@@ -1,2 +1,2 @@
 # How to use
-- Visit the [https://ai-or-not-acm-qu.netlify.app/](website) or clone it and run it using `bun run dev`
+- Visit the [website](https://ai-or-not-acm-qu.netlify.app/) or clone it and run it using `bun run dev`
