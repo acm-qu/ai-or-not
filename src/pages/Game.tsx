@@ -37,10 +37,15 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [second, gameStarted])
 
+  const handleStop = () => {
+    setTimeLeft(0)
+    gameTimer.stop()
+    setTotalScore((score) => (userAnswer === currentQ.correctIsFirst) ? score + 1 : score)
+  }
+
   useEffect(() => {
     if (timeLeft === 0) {
-      gameTimer.stop()
-      setTotalScore((score) => (userAnswer === currentQ.correctIsFirst) ? score + 1 : score)
+      handleStop()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft])
@@ -49,6 +54,7 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
     if (timeLeft <= 0) return
     setUserAnswer(isFirstImage)
   }
+
 
   const handleNext = () => {
     const MAX_QUESTIONS = 10
@@ -151,9 +157,8 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
             <Button style={{
               backgroundPosition: -((currentQuestion + 1) * 10) + "%"
             }} 
-            disabled={timeLeft > 0}
-            onClick={handleNext} className={classes.next} leftSection={<IconArrowRight size={18} />}>
-              Next
+            onClick={timeLeft > 0 ? handleStop : handleNext} className={classes.next} leftSection={<IconArrowRight size={18} />}>
+              {timeLeft > 0 ? "I'm sure" : "Next"}
             </Button>
           </Stack>
         ) : (
