@@ -15,6 +15,12 @@ const Bank = [
    { "url": "https://xsgames.co/randomusers/assets/avatars/female/1.jpg", "isAi": true }],
   [{ "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=60", "isAi": false },
    { "url": "https://xsgames.co/randomusers/assets/avatars/male/2.jpg", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/4uUyAG3r7xEot00V4r43pIQCieKf4gX8XWas8t4wXpg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGFzdGVvZmhvbWUu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzA5L3RocmVl/LWNoZWZzLWF0LXdv/cmsuanBnP2ZpdD03/MDAsNzAw", "isAi": false },
+   { "url": "https://images.stockcake.com/public/b/3/b/b3bc9d9c-4137-4d64-8193-bd2193d60fef_large/tattooed-chef-creates-stockcake.jpg", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/41HsLtKHusQUYtu9qrHHUROs0OiT-Ne8js9iHS7enKY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnVuZXJhbHByaW50/cy5jb20vOTgyNDc4/Nzg1L0hhbmRsZXIv/UGljdHVyZS9QSS9U/LzAwMTIzMTNfZnJh/bWVkLW1lbW9yaWFs/LXBvcnRyYWl0LW9s/ZC13b3JsZC1iYWNr/Z3JvdW5kXzUwMC5q/cGVn", "isAi": false },
+   { "url": "https://images.stockcake.com/public/9/2/4/9245cba5-8efc-40b0-9353-c5b6546b90c8_large/contemplative-man-portrait-stockcake.jpg", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/ReRP_Z-pIfWsl-QuljX_s8EbN2wzaVS2IbavIFrwSaY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMjY5/ODQ2NS9wZXhlbHMt/cGhvdG8tMjY5ODQ2/NS5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2Imdz0x/MjYwJmg9NzUwJmRw/cj0x", "isAi": false },
+   { "url": "https://images.stockcake.com/public/f/3/8/f3877ec7-7747-422e-a337-9935b3ce0eac_large/technology-meets-experience-stockcake.jpg", "isAi": true }],
 
   // --- LANDSCAPES ---
   [{ "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=60", "isAi": false },
@@ -39,6 +45,10 @@ const Bank = [
    { "url": "https://replicate.delivery/pbxt/fLke1vUfF9X8L9eJvUfF/panda.png", "isAi": true }],
   [{ "url": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=400&q=60", "isAi": false },
    { "url": "https://images.nightcafe.studio/jobs/wolf-ai.jpg?tr=w-400,c-at_max", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/mLgXSGhJkSWb2_Auz35JMBfaJqRidlN7bzXYoqnk32E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjA5/ODg5NTU3NC9waG90/by9kb2ctZ2l2ZXMt/cGF3LXRvLWEtd29t/YW4tbWFraW5nLWhp/Z2gtZml2ZS1nZXN0/dXJlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1BXzhadjdx/bDJMYjFZWUJfUGJK/YlVUalBpRjZ5elh6/NmxFSlZ4NUZiRnBF/PQ", "isAi": false },
+   { "url": "https://images.stockcake.com/public/7/a/d/7ad59f21-757d-4fbd-97e9-57985f1ddd09_large/pet-in-motion-stockcake.jpg", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/FrSGXu7omgngZoW_dUuxxc1yWzSlVU4eiLKAvTidxrs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTgx/MTQ3ODkwL3Bob3Rv/L3Byb2ZpbGUtb2Yt/YnJvd24taG9yc2Ut/c2hvd2luZy10ZWV0/aC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9MEdocEM0Z2FR/SDJKblVyZnNidEV5/TVlETS0zcUhhS2NW/bnZMLXdSaV9tcz0", "isAi": false },
+   { "url": "https://images.stockcake.com/public/8/9/f/89f95c13-b9e2-4f5d-855c-31cda1ab5db6_large/grazing-horse-illustration-stockcake.jpg", "isAi": true }],
 
   // --- FOOD ---
   [{ "url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&q=60", "isAi": false },
@@ -63,6 +73,8 @@ const Bank = [
    { "url": "https://replicate.delivery/pbxt/fLke1vUf/watch-ai.png", "isAi": true }],
   [{ "url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=60", "isAi": false },
    { "url": "https://images.nightcafe.studio/jobs/cyber-city.jpg?tr=w-400,c-at_max", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/ktjWGE-PmsEQVl5eG9SmpVpd1AwqzzsJsXUPNBFyNsI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vbmxp/bmUubmppdC5lZHUv/c2l0ZXMvb25saW5l/L2ZpbGVzL0V4dGVu/ZGVkJTIwUmVhbGl0/eS5wbmc", "isAi": false },
+   { "url": "https://images.stockcake.com/public/5/4/a/54aa41ce-b2d3-4b0b-8d5e-875fc86b892b_large/tech-immersion-workspace-stockcake.jpg", "isAi": true }],
 
   // --- ARCHITECTURE ---
   [{ "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&q=60", "isAi": false },
@@ -75,6 +87,8 @@ const Bank = [
    { "url": "https://images.nightcafe.studio/jobs/village-ai.jpg?tr=w-400,c-at_max", "isAi": true }],
   [{ "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&q=60", "isAi": false },
    { "url": "https://replicate.delivery/pbxt/fLke1vUf/mansion-ai.png", "isAi": true }],
+  [{ "url": "https://imgs.search.brave.com/loX-_EX_RjIrQjtRcZnxJ7VtJRJcnkzO7ihQcIS6Ulg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wYXJhbWVkaWNz/LWFyZS13b3JraW5n/LXdpdGgtc2VuaW9y/LW1hbi1wYXRpZW50/LXdoaWxlLWhlLWxp/ZXMtc3RyZXRjaGVy/LWFtYnVsYW5jZV85/MjYxOTktMjQ1Mjg1/Mi5qcGc_c2VtdD1h/aXNfaHlicmlk", "isAi": false },
+   { "url": "https://images.stockcake.com/public/a/3/1/a3139e85-fb13-4c4b-b7c2-415a6633394d_large/medical-training-exercise-stockcake.jpg", "isAi": true }],
 
   // --- SCI-FI/SPACE ---
   [{ "url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&q=60", "isAi": false },
@@ -98,7 +112,9 @@ const Bank = [
   [{ "url": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=400&q=60", "isAi": false },
    { "url": "https://images.nightcafe.studio/jobs/modernart-ai.jpg?tr=w-400,c-at_max", "isAi": true }],
   [{ "url": "https://images.unsplash.com/photo-1549490349-8643362247b5?w=400&q=60", "isAi": false },
-   { "url": "https://replicate.delivery/pbxt/fLke1vUf/sketch-ai.png", "isAi": true }]
+   { "url": "https://replicate.delivery/pbxt/fLke1vUf/sketch-ai.png", "isAi": true }],
+  [{ "url": "https://www.rembrandtpaintings.com/assets/img/rembrandt.jpg", "isAi": false },
+   { "url": "https://images.stockcake.com/public/e/0/6/e067cabd-39ed-482c-b460-9ae49d4a67c4_large/contemplative-portrait-painting-stockcake.jpg", "isAi": true }],
 ];
 
 /**
