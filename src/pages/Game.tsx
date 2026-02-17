@@ -40,12 +40,12 @@ const Game = ({ setModal, setGameState, setScore }: PageType) => {
   const handleStop = () => {
     setTimeLeft(0)
     gameTimer.stop()
-    setTotalScore((score) => (userAnswer === currentQ.correctIsFirst) ? score + 1 : score)
   }
 
   useEffect(() => {
     if (timeLeft === 0) {
       handleStop()
+      setTotalScore((score) => (userAnswer === currentQ.correctIsFirst) ? score + 1 : score)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft])
